@@ -1,0 +1,584 @@
+{
+  "baseline_protein_only": [
+    {
+      "file": "sup32_seed42.json",
+      "original_file": "ProMeta_seed42_20260908_055944.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7052,
+      "note": "主基线 5-seed 之一"
+    },
+    {
+      "file": "sup32_seed520.json",
+      "original_file": "ProMeta_seed520_20260908_062658.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7114,
+      "note": "主基线 5-seed 之一"
+    },
+    {
+      "file": "sup32_seed114514.json",
+      "original_file": "ProMeta_seed114514_20260908_074349.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.704,
+      "note": "主基线 5-seed 之一"
+    },
+    {
+      "file": "sup32_seed1919810.json",
+      "original_file": "ProMeta_seed1919810_20260908_082014.json",
+      "seed": 1919810,
+      "support_size": 32,
+      "test_auroc": 0.7107,
+      "note": "主基线 5-seed 之一"
+    },
+    {
+      "file": "sup32_seed20260121.json",
+      "original_file": "ProMeta_seed20260121_20260908_115155.json",
+      "seed": 20260121,
+      "support_size": 32,
+      "test_auroc": 0.704,
+      "note": "主基线 5-seed 之一(该 seed 有两次作废运行0.5211, 此为修复后)"
+    },
+    {
+      "file": "sup16_seed42.json",
+      "original_file": "ProMeta_seed42_20261008_065707.json",
+      "seed": null,
+      "support_size": 16,
+      "test_auroc": 0.703,
+      "note": "support 扫描"
+    },
+    {
+      "file": "sup8_seed42.json",
+      "original_file": "ProMeta_seed42_20261008_065935.json",
+      "seed": null,
+      "support_size": 8,
+      "test_auroc": 0.6804,
+      "note": "support 扫描"
+    },
+    {
+      "file": "sup4_seed42.json",
+      "original_file": "ProMeta_seed42_20261008_093050.json",
+      "seed": null,
+      "support_size": 4,
+      "test_auroc": 0.6774,
+      "note": "support 扫描"
+    },
+    {
+      "file": "sup2_seed42.json",
+      "original_file": "ProMeta_seed42_20261008_093124.json",
+      "seed": null,
+      "support_size": 2,
+      "test_auroc": 0.6626,
+      "note": "support 扫描"
+    }
+  ],
+  "meta_only": [
+    {
+      "file": "sup32_seed42.json",
+      "original_file": "MetaOnly_seed42_20260910_041142.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.6225,
+      "note": "canonical(逐病CSV用此 3-seed 平均)"
+    },
+    {
+      "file": "sup32_seed520.json",
+      "original_file": "MetaOnly_seed520_20260910_052019.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.6014,
+      "note": "canonical"
+    },
+    {
+      "file": "sup32_seed114514.json",
+      "original_file": "MetaOnly_seed114514_20260910_041152.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.5863,
+      "note": "canonical"
+    },
+    {
+      "file": "sup32_seed1919810.json",
+      "original_file": "MetaOnly_seed1919810_20260910_052003.json",
+      "seed": 1919810,
+      "support_size": 32,
+      "test_auroc": 0.619,
+      "note": "补充 seed"
+    },
+    {
+      "file": "sup32_seed20260121.json",
+      "original_file": "MetaOnly_seed20260121_20260910_060751.json",
+      "seed": 20260121,
+      "support_size": 32,
+      "test_auroc": 0.5857,
+      "note": "补充 seed"
+    },
+    {
+      "file": "sup32_seed42_superseded_20260910_030341.json",
+      "original_file": "MetaOnly_seed42_20260910_030341.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.4582,
+      "note": "作废: 早期运行宏平均仅0.4582, 被041142替代"
+    }
+  ],
+  "clsdual_pre_v1_64d": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSDual_pre_seed42_20260911_084623_3651348.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7054,
+      "note": "预训练ckpt v1 (best_model.pt)"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSDual_pre_seed520_20260911_083332_3651349.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7154,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSDual_pre_seed114514_20260911_085709_3651347.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.7102,
+      "note": ""
+    }
+  ],
+  "clsdual_scratch_64d": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSDual_scratch_seed42_20260915_035815_3670528.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.698,
+      "note": "无预训练对照"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSDual_scratch_seed520_20260915_033818_3670530.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7116,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSDual_scratch_seed114514_20260915_050839_3672437.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.6985,
+      "note": ""
+    }
+  ],
+  "clsdual_pre_v2_64d": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSDual_pre_seed42_20260917_035010_3719338.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7051,
+      "note": "预训练ckpt v2_64d; InfoNCE 配对基线"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSDual_pre_seed520_20260917_035233_3719340.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7166,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSDual_pre_seed114514_20260917_035523_3719342.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.7077,
+      "note": ""
+    }
+  ],
+  "clsdual_d128": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSDual_pre_seed42_20260917_073623_3732132.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7054,
+      "note": "--embed_dim 128"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSDual_pre_seed520_20260917_073610_3732134.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7135,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSDual_pre_seed114514_20260917_074550_3732136.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.7114,
+      "note": ""
+    }
+  ],
+  "clsdual_infonce_l0.1_t0.07": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSDual_pre_seed42_20261009_044438_3821793.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7108,
+      "note": "InfoNCE λ=0.1 τ=0.07 (最优配置)"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSDual_pre_seed520_20261009_045026_3821795.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7141,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSDual_pre_seed114514_20261009_044902_3821797.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.7138,
+      "note": ""
+    }
+  ],
+  "clsdual_infonce_l1.0_t0.07": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSDual_pre_seed42_20261009_133147_3829301.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.6969,
+      "note": "InfoNCE λ=1.0 (权重过大有害)"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSDual_pre_seed520_20261009_125949_3829303.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7085,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSDual_pre_seed114514_20261009_130115_3829305.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.716,
+      "note": ""
+    }
+  ],
+  "clsdual_infonce_l0.1_t0.1": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSDual_pre_seed42_20261009_152114_3834231.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7126,
+      "note": "InfoNCE λ=0.1 τ=0.1"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSDual_pre_seed520_20261009_151904_3834232.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7125,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSDual_pre_seed114514_20261009_152238_3834233.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.7108,
+      "note": ""
+    }
+  ],
+  "clsdual_infonce_l0.1_t0.5": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSDual_pre_seed42_20261009_151228_3834234.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7098,
+      "note": "InfoNCE λ=0.1 τ=0.5"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSDual_pre_seed520_20261009_161530_3839666.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7165,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSDual_pre_seed114514_20261009_172441_3840054.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.7063,
+      "note": ""
+    }
+  ],
+  "clsdual_modgate": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSDual_pre_seed42_20261015_030837_3863309.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7057,
+      "note": "mod_gate=1 (阴性: 门控塌缩)"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSDual_pre_seed520_20261015_030621_3863310.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7116,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSDual_pre_seed114514_20261015_031412_3863311.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.7065,
+      "note": ""
+    }
+  ],
+  "clsdual_support_scan": [
+    {
+      "file": "sup16_seed42.json",
+      "original_file": "CLSDual_pre_seed42_20261008_045339_3796308.json",
+      "seed": 42,
+      "support_size": 16,
+      "test_auroc": 0.7018,
+      "note": ""
+    },
+    {
+      "file": "sup8_seed42.json",
+      "original_file": "CLSDual_pre_seed42_20261008_044906_3796310.json",
+      "seed": 42,
+      "support_size": 8,
+      "test_auroc": 0.689,
+      "note": ""
+    },
+    {
+      "file": "sup4_seed42.json",
+      "original_file": "CLSDual_pre_seed42_20261008_083459_3809044.json",
+      "seed": 42,
+      "support_size": 4,
+      "test_auroc": 0.677,
+      "note": ""
+    },
+    {
+      "file": "sup2_seed42.json",
+      "original_file": "CLSDual_pre_seed42_20261008_083453_3809046.json",
+      "seed": 42,
+      "support_size": 2,
+      "test_auroc": 0.6769,
+      "note": ""
+    }
+  ],
+  "clsca_pre_v1_64d": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSCA_pre_seed42_20260916_074237_3693940.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7021,
+      "note": ""
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSCA_pre_seed520_20260916_074219_3693942.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7085,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSCA_pre_seed114514_20260916_085732_3696270.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.7012,
+      "note": ""
+    }
+  ],
+  "clsca_scratch_64d": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSCA_scratch_seed42_20260916_095938_3697545.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7123,
+      "note": "CLSCA-none = 全局最优配置"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSCA_scratch_seed520_20260916_095914_3697547.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7078,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSCA_scratch_seed114514_20260916_105836_3698704.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.7183,
+      "note": ""
+    }
+  ],
+  "clsca_pre_v2_64d": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSCA_pre_seed42_20260917_045955_3722381.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7098,
+      "note": "预训练ckpt v2_64d"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSCA_pre_seed520_20260917_045849_3722714.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSCA_pre_seed114514_20260917_051509_3723051.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.7045,
+      "note": ""
+    }
+  ],
+  "clsca_d128": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSCA_pre_seed42_20260917_084744_3735097.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.6921,
+      "note": "--embed_dim 128"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSCA_pre_seed520_20260917_090022_3734965.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7075,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSCA_pre_seed114514_20260917_090259_3735637.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.6968,
+      "note": ""
+    }
+  ],
+  "clsca_modgate": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSCA_scratch_seed42_20261015_035009_3868107.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.7082,
+      "note": "mod_gate=1 (阴性: 塌缩)"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSCA_scratch_seed520_20261015_044158_3869767.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.7053,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSCA_scratch_seed114514_20261015_053431_3870147.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.7116,
+      "note": ""
+    }
+  ],
+  "clsca_infonce_modgate": [
+    {
+      "file": "seed42.json",
+      "original_file": "CLSCA_scratch_seed42_20261015_063736_3871043.json",
+      "seed": 42,
+      "support_size": 32,
+      "test_auroc": 0.6963,
+      "note": "InfoNCE+mod_gate 叠加 (阴性: 有害)"
+    },
+    {
+      "file": "seed520.json",
+      "original_file": "CLSCA_scratch_seed520_20261015_073538_3873333.json",
+      "seed": 520,
+      "support_size": 32,
+      "test_auroc": 0.709,
+      "note": ""
+    },
+    {
+      "file": "seed114514.json",
+      "original_file": "CLSCA_scratch_seed114514_20261015_084124_3879010.json",
+      "seed": 114514,
+      "support_size": 32,
+      "test_auroc": 0.6946,
+      "note": ""
+    }
+  ],
+  "clsca_support_scan": [
+    {
+      "file": "sup16_seed42.json",
+      "original_file": "CLSCA_scratch_seed42_20261008_060213_3801149.json",
+      "seed": 42,
+      "support_size": 16,
+      "test_auroc": 0.7095,
+      "note": ""
+    },
+    {
+      "file": "sup8_seed42.json",
+      "original_file": "CLSCA_scratch_seed42_20261008_055300_3801151.json",
+      "seed": 42,
+      "support_size": 8,
+      "test_auroc": 0.6986,
+      "note": ""
+    },
+    {
+      "file": "sup4_seed42.json",
+      "original_file": "CLSCA_scratch_seed42_20261008_085105_3809174.json",
+      "seed": 42,
+      "support_size": 4,
+      "test_auroc": 0.6836,
+      "note": ""
+    },
+    {
+      "file": "sup2_seed42.json",
+      "original_file": "CLSCA_scratch_seed42_20261008_085208_3809239.json",
+      "seed": 42,
+      "support_size": 2,
+      "test_auroc": 0.6657,
+      "note": ""
+    }
+  ]
+}

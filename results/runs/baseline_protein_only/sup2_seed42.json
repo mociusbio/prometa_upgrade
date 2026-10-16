@@ -1,0 +1,850 @@
+{
+    "model": "ProMeta",
+    "experiment_name": "ProMeta",
+    "config": {
+        "data_dir": "/data/zhangzimo/MedicalAI/prometa-meta/prometa_reproduce/data_correct",
+        "proteomics_csv": "/data/zhangzimo/MedicalAI/Prometa2.0/data/proteomics_data.csv",
+        "cpdb_path": "/data/zhangzimo/MedicalAI/Prometa2.0_Plus/pathway_data/CPDB_pathways_genes.tab",
+        "output_dir": "/data/zhangzimo/MedicalAI/prometa-meta/prometa_reproduce/results_correct",
+        "gpu_id": 3,
+        "random_seed": 42,
+        "support_size": 2,
+        "batch_size": 4,
+        "outer_lr": 0.0001,
+        "inner_lr": 0.005,
+        "dropout": 0.5,
+        "l1_lambda": 0.001
+    },
+    "timestamp": "20261008_093124",
+    "paths": {
+        "json": "/data/zhangzimo/MedicalAI/prometa-meta/prometa_reproduce/results_correct/benchmark_results/support_2/ProMeta_seed42_20261008_093124.json",
+        "plot": "/data/zhangzimo/MedicalAI/prometa-meta/prometa_reproduce/results_correct/benchmark_results/support_2/ProMeta_seed42_20261008_093124.png"
+    },
+    "summary_metrics": {
+        "auroc": 0.6625983882081378,
+        "auprc": 0.43684282014658166,
+        "f1": 0.12874383541292264,
+        "accuracy": 0.7597012362637363
+    },
+    "per_task_details": [
+        {
+            "auroc": 0.6533203125,
+            "auprc": 0.4865637421607971,
+            "f1": 0.23255813953488372,
+            "accuracy": 0.7421875,
+            "precision": 0.45454545454545453,
+            "recall": 0.15625,
+            "disease_term": "G6_EPIPAROX"
+        },
+        {
+            "auroc": 0.6669921875,
+            "auprc": 0.391422301530838,
+            "f1": 0.05714285714285714,
+            "accuracy": 0.7421875,
+            "precision": 0.3333333333333333,
+            "recall": 0.03125,
+            "disease_term": "CARDIAC_ARRHYTM"
+        },
+        {
+            "auroc": 0.6253255605697632,
+            "auprc": 0.4185458719730377,
+            "f1": 0.11428571428571428,
+            "accuracy": 0.7578125,
+            "precision": 0.6666666666666666,
+            "recall": 0.0625,
+            "disease_term": "ST19_INJURI_KNEE_LOWER_LEG"
+        },
+        {
+            "auroc": 0.5478515625,
+            "auprc": 0.3126315772533417,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "ST19_INJURI_WRIST_HAND"
+        },
+        {
+            "auroc": 0.6422849297523499,
+            "auprc": 0.33342257142066956,
+            "f1": 0.0,
+            "accuracy": 0.765625,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "O15_PREG_ABORT"
+        },
+        {
+            "auroc": 0.5807291269302368,
+            "auprc": 0.325669527053833,
+            "f1": 0.05714285714285714,
+            "accuracy": 0.7421875,
+            "precision": 0.3333333333333333,
+            "recall": 0.03125,
+            "disease_term": "K11_FUNCDYSP"
+        },
+        {
+            "auroc": 0.5875650644302368,
+            "auprc": 0.32815849781036377,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "C3_SKIN_EXALLC"
+        },
+        {
+            "auroc": 0.6393228769302368,
+            "auprc": 0.39499688148498535,
+            "f1": 0.058823529411764705,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.03125,
+            "disease_term": "K11_OTHDIG"
+        },
+        {
+            "auroc": 0.6272786855697632,
+            "auprc": 0.31024596095085144,
+            "f1": 0.0,
+            "accuracy": 0.7265625,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "N14_FEMALEGENINF"
+        },
+        {
+            "auroc": 0.822265625,
+            "auprc": 0.6258580684661865,
+            "f1": 0.35555555555555557,
+            "accuracy": 0.7734375,
+            "precision": 0.6153846153846154,
+            "recall": 0.25,
+            "disease_term": "Z21_PRESENCE_CARDIAC_VASCULAR_IMPLANTNTS_GRAFTS"
+        },
+        {
+            "auroc": 0.7125651240348816,
+            "auprc": 0.4703376889228821,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "M13_LOWBACKPAIN"
+        },
+        {
+            "auroc": 0.6175130605697632,
+            "auprc": 0.32502079010009766,
+            "f1": 0.058823529411764705,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.03125,
+            "disease_term": "C3_BREAST_HER2NEG_EXALLC"
+        },
+        {
+            "auroc": 0.5791015625,
+            "auprc": 0.3391774594783783,
+            "f1": 0.0,
+            "accuracy": 0.7421875,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "M13_OSTEOCHONDRO"
+        },
+        {
+            "auroc": 0.5465494990348816,
+            "auprc": 0.32642778754234314,
+            "f1": 0.1111111111111111,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.0625,
+            "disease_term": "VWXY20_TRANSPO_ACCIDENTS"
+        },
+        {
+            "auroc": 0.8001302480697632,
+            "auprc": 0.5628880262374878,
+            "f1": 0.05714285714285714,
+            "accuracy": 0.7421875,
+            "precision": 0.3333333333333333,
+            "recall": 0.03125,
+            "disease_term": "I9_CHD"
+        },
+        {
+            "auroc": 0.66796875,
+            "auprc": 0.3813847601413727,
+            "f1": 0.15789473684210525,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.09375,
+            "disease_term": "HYPOTHYROIDISM"
+        },
+        {
+            "auroc": 0.6057943105697632,
+            "auprc": 0.33345308899879456,
+            "f1": 0.10810810810810811,
+            "accuracy": 0.7421875,
+            "precision": 0.4,
+            "recall": 0.0625,
+            "disease_term": "N14_POLYPFEMGEN"
+        },
+        {
+            "auroc": 0.578125,
+            "auprc": 0.2985183894634247,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "N14_POSTMENBLEED"
+        },
+        {
+            "auroc": 0.7848306894302368,
+            "auprc": 0.5679636597633362,
+            "f1": 0.16216216216216217,
+            "accuracy": 0.7578125,
+            "precision": 0.6,
+            "recall": 0.09375,
+            "disease_term": "F5_MOOD"
+        },
+        {
+            "auroc": 0.5553385019302368,
+            "auprc": 0.27415773272514343,
+            "f1": 0.05555555555555555,
+            "accuracy": 0.734375,
+            "precision": 0.25,
+            "recall": 0.03125,
+            "disease_term": "M13_MENISCUSDERANGEMENTS"
+        },
+        {
+            "auroc": 0.7542317509651184,
+            "auprc": 0.5150803327560425,
+            "f1": 0.11764705882352941,
+            "accuracy": 0.765625,
+            "precision": 1.0,
+            "recall": 0.0625,
+            "disease_term": "FIBRO_COMORB"
+        },
+        {
+            "auroc": 0.8291015625,
+            "auprc": 0.6269007325172424,
+            "f1": 0.1111111111111111,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.0625,
+            "disease_term": "T2D_INCLAVO"
+        },
+        {
+            "auroc": 0.7057291269302368,
+            "auprc": 0.4721188545227051,
+            "f1": 0.34782608695652173,
+            "accuracy": 0.765625,
+            "precision": 0.5714285714285714,
+            "recall": 0.25,
+            "disease_term": "D3_ANAEMIANAS"
+        },
+        {
+            "auroc": 0.7272135615348816,
+            "auprc": 0.5206167101860046,
+            "f1": 0.11428571428571428,
+            "accuracy": 0.7578125,
+            "precision": 0.6666666666666666,
+            "recall": 0.0625,
+            "disease_term": "H8_EAR_MASTOID"
+        },
+        {
+            "auroc": 0.5556640625,
+            "auprc": 0.3483611047267914,
+            "f1": 0.1111111111111111,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.0625,
+            "disease_term": "M13_KNEEDERANGEMENTS"
+        },
+        {
+            "auroc": 0.6197916865348816,
+            "auprc": 0.35041195154190063,
+            "f1": 0.06060606060606061,
+            "accuracy": 0.7578125,
+            "precision": 1.0,
+            "recall": 0.03125,
+            "disease_term": "L12_INFECT_SKIN"
+        },
+        {
+            "auroc": 0.7083333134651184,
+            "auprc": 0.5003595352172852,
+            "f1": 0.11428571428571428,
+            "accuracy": 0.7578125,
+            "precision": 0.6666666666666666,
+            "recall": 0.0625,
+            "disease_term": "BRONCHITIS"
+        },
+        {
+            "auroc": 0.6832682490348816,
+            "auprc": 0.48920121788978577,
+            "f1": 0.2222222222222222,
+            "accuracy": 0.78125,
+            "precision": 1.0,
+            "recall": 0.125,
+            "disease_term": "Z21_OTHER_MEDICAL_CARE"
+        },
+        {
+            "auroc": 0.75390625,
+            "auprc": 0.4952549338340759,
+            "f1": 0.15789473684210525,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.09375,
+            "disease_term": "F5_DEPRESSIO"
+        },
+        {
+            "auroc": 0.6829426884651184,
+            "auprc": 0.4069105386734009,
+            "f1": 0.05555555555555555,
+            "accuracy": 0.734375,
+            "precision": 0.25,
+            "recall": 0.03125,
+            "disease_term": "K11_OTHINT"
+        },
+        {
+            "auroc": 0.7141926288604736,
+            "auprc": 0.5570834279060364,
+            "f1": 0.11764705882352941,
+            "accuracy": 0.765625,
+            "precision": 1.0,
+            "recall": 0.0625,
+            "disease_term": "M13_LOWBACKPAINORANDSCIATICA"
+        },
+        {
+            "auroc": 0.8072916269302368,
+            "auprc": 0.6569691300392151,
+            "f1": 0.16666666666666666,
+            "accuracy": 0.765625,
+            "precision": 0.75,
+            "recall": 0.09375,
+            "disease_term": "D3_APLASTICANDOTHANAEMIA"
+        },
+        {
+            "auroc": 0.7379557490348816,
+            "auprc": 0.48710906505584717,
+            "f1": 0.3,
+            "accuracy": 0.78125,
+            "precision": 0.75,
+            "recall": 0.1875,
+            "disease_term": "R18_ABNORMAL_FINDI_DIAGNOST_IMAGI_FUNCTION_STUDI_WO_DIAGNOSIS"
+        },
+        {
+            "auroc": 0.7708333134651184,
+            "auprc": 0.5535987019538879,
+            "f1": 0.3,
+            "accuracy": 0.78125,
+            "precision": 0.75,
+            "recall": 0.1875,
+            "disease_term": "I9_CHD_NOREV"
+        },
+        {
+            "auroc": 0.6910807490348816,
+            "auprc": 0.4989734888076782,
+            "f1": 0.21621621621621623,
+            "accuracy": 0.7734375,
+            "precision": 0.8,
+            "recall": 0.125,
+            "disease_term": "R18_SYNCO_COLLAP"
+        },
+        {
+            "auroc": 0.7099609375,
+            "auprc": 0.5479717254638672,
+            "f1": 0.2926829268292683,
+            "accuracy": 0.7734375,
+            "precision": 0.6666666666666666,
+            "recall": 0.1875,
+            "disease_term": "R18_ABNORMALITI_BREAT"
+        },
+        {
+            "auroc": 0.6321614384651184,
+            "auprc": 0.4176897406578064,
+            "f1": 0.058823529411764705,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.03125,
+            "disease_term": "AB1_OTHER_BACT_INOTHER"
+        },
+        {
+            "auroc": 0.4615885615348816,
+            "auprc": 0.2616617977619171,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "R18_OTHER_SYMPTOMS_SIGNS_INVOLVI_DIGES_SYSTEM_ABDOMEN"
+        },
+        {
+            "auroc": 0.5654296875,
+            "auprc": 0.33689260482788086,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "I9_VARICVE"
+        },
+        {
+            "auroc": 0.7646484375,
+            "auprc": 0.5969250202178955,
+            "f1": 0.4186046511627907,
+            "accuracy": 0.8046875,
+            "precision": 0.8181818181818182,
+            "recall": 0.28125,
+            "disease_term": "BLEEDING"
+        },
+        {
+            "auroc": 0.6031900644302368,
+            "auprc": 0.35779571533203125,
+            "f1": 0.06060606060606061,
+            "accuracy": 0.7578125,
+            "precision": 1.0,
+            "recall": 0.03125,
+            "disease_term": "N14_BREAST"
+        },
+        {
+            "auroc": 0.8050130009651184,
+            "auprc": 0.6220377087593079,
+            "f1": 0.34146341463414637,
+            "accuracy": 0.7890625,
+            "precision": 0.7777777777777778,
+            "recall": 0.21875,
+            "disease_term": "E4_DM2_STRICT"
+        },
+        {
+            "auroc": 0.6539713740348816,
+            "auprc": 0.45929330587387085,
+            "f1": 0.24390243902439024,
+            "accuracy": 0.7578125,
+            "precision": 0.5555555555555556,
+            "recall": 0.15625,
+            "disease_term": "E4_HYTHYNAS"
+        },
+        {
+            "auroc": 0.6516927480697632,
+            "auprc": 0.3774210214614868,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "KNEE_ARTHROSIS"
+        },
+        {
+            "auroc": 0.7682291865348816,
+            "auprc": 0.5323574542999268,
+            "f1": 0.11428571428571428,
+            "accuracy": 0.7578125,
+            "precision": 0.6666666666666666,
+            "recall": 0.0625,
+            "disease_term": "D3_OTHERANAEMIA"
+        },
+        {
+            "auroc": 0.8147786259651184,
+            "auprc": 0.6734576225280762,
+            "f1": 0.2702702702702703,
+            "accuracy": 0.7890625,
+            "precision": 1.0,
+            "recall": 0.15625,
+            "disease_term": "I9_UAP"
+        },
+        {
+            "auroc": 0.6572265028953552,
+            "auprc": 0.37053239345550537,
+            "f1": 0.0,
+            "accuracy": 0.7421875,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "N14_MENORRHAGIA"
+        },
+        {
+            "auroc": 0.7197265625,
+            "auprc": 0.571020781993866,
+            "f1": 0.3157894736842105,
+            "accuracy": 0.796875,
+            "precision": 1.0,
+            "recall": 0.1875,
+            "disease_term": "AB1_BACT_BIR_OTHER_INF_AGENTS"
+        },
+        {
+            "auroc": 0.8307291269302368,
+            "auprc": 0.559574544429779,
+            "f1": 0.06060606060606061,
+            "accuracy": 0.7578125,
+            "precision": 1.0,
+            "recall": 0.03125,
+            "disease_term": "O15_MATERN_CARE"
+        },
+        {
+            "auroc": 0.7594401240348816,
+            "auprc": 0.5438202023506165,
+            "f1": 0.058823529411764705,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.03125,
+            "disease_term": "KRA_PSY_MOOD"
+        },
+        {
+            "auroc": 0.4213501811027527,
+            "auprc": 0.25541654229164124,
+            "f1": 0.0,
+            "accuracy": 0.7578125,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "CD2_BENIGN_LIPOMATOUS"
+        },
+        {
+            "auroc": 0.7197265625,
+            "auprc": 0.5552335977554321,
+            "f1": 0.2926829268292683,
+            "accuracy": 0.7734375,
+            "precision": 0.6666666666666666,
+            "recall": 0.1875,
+            "disease_term": "K11_OTHFUNC"
+        },
+        {
+            "auroc": 0.5442708134651184,
+            "auprc": 0.27962762117385864,
+            "f1": 0.05714285714285714,
+            "accuracy": 0.7421875,
+            "precision": 0.3333333333333333,
+            "recall": 0.03125,
+            "disease_term": "H7_LIDLACRIMALORBIT"
+        },
+        {
+            "auroc": 0.7848307490348816,
+            "auprc": 0.6263395547866821,
+            "f1": 0.48,
+            "accuracy": 0.796875,
+            "precision": 0.6666666666666666,
+            "recall": 0.375,
+            "disease_term": "I9_DOAAC"
+        },
+        {
+            "auroc": 0.5846354365348816,
+            "auprc": 0.3856700658798218,
+            "f1": 0.17142857142857143,
+            "accuracy": 0.7734375,
+            "precision": 1.0,
+            "recall": 0.09375,
+            "disease_term": "CD2_BENIGN_COLORECANI"
+        },
+        {
+            "auroc": 0.6048176884651184,
+            "auprc": 0.43856295943260193,
+            "f1": 0.06060606060606061,
+            "accuracy": 0.7578125,
+            "precision": 1.0,
+            "recall": 0.03125,
+            "disease_term": "M13_JOINTOTH"
+        },
+        {
+            "auroc": 0.5622448921203613,
+            "auprc": 0.3472238779067993,
+            "f1": 0.12121212121212122,
+            "accuracy": 0.7734375,
+            "precision": 0.6666666666666666,
+            "recall": 0.06666666666666667,
+            "disease_term": "L12_OTHERDISSKINANDSUBCUTIS"
+        },
+        {
+            "auroc": 0.6119791269302368,
+            "auprc": 0.3700786232948303,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "J10_VOCALLARYNX"
+        },
+        {
+            "auroc": 0.7571614384651184,
+            "auprc": 0.5004545450210571,
+            "f1": 0.16216216216216217,
+            "accuracy": 0.7578125,
+            "precision": 0.6,
+            "recall": 0.09375,
+            "disease_term": "E4_HYTHY_AI_STRICT"
+        },
+        {
+            "auroc": 0.9316406846046448,
+            "auprc": 0.8702888488769531,
+            "f1": 0.6938775510204082,
+            "accuracy": 0.8828125,
+            "precision": 1.0,
+            "recall": 0.53125,
+            "disease_term": "COPD_MULTIMORB"
+        },
+        {
+            "auroc": 0.7626953125,
+            "auprc": 0.5408554673194885,
+            "f1": 0.05714285714285714,
+            "accuracy": 0.7421875,
+            "precision": 0.3333333333333333,
+            "recall": 0.03125,
+            "disease_term": "M13_SOFTTISSUEOTH"
+        },
+        {
+            "auroc": 0.6106770634651184,
+            "auprc": 0.4177019000053406,
+            "f1": 0.23809523809523808,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.15625,
+            "disease_term": "ACUTE_RESPIRATORY_INFECTIONS"
+        },
+        {
+            "auroc": 0.7532551884651184,
+            "auprc": 0.5359310507774353,
+            "f1": 0.2727272727272727,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.1875,
+            "disease_term": "M13_POLYARTHROPATHIES"
+        },
+        {
+            "auroc": 0.8098958134651184,
+            "auprc": 0.5181912183761597,
+            "f1": 0.06060606060606061,
+            "accuracy": 0.7578125,
+            "precision": 1.0,
+            "recall": 0.03125,
+            "disease_term": "O15_DELIV_PERIN_LACER"
+        },
+        {
+            "auroc": 0.7532552480697632,
+            "auprc": 0.5335719585418701,
+            "f1": 0.11428571428571428,
+            "accuracy": 0.7578125,
+            "precision": 0.6666666666666666,
+            "recall": 0.0625,
+            "disease_term": "Z21_PERSONAL_HISTORY_MEDICAL_TREAT"
+        },
+        {
+            "auroc": 0.7701822519302368,
+            "auprc": 0.4510312080383301,
+            "f1": 0.05555555555555555,
+            "accuracy": 0.734375,
+            "precision": 0.25,
+            "recall": 0.03125,
+            "disease_term": "Z21_FAMILY_HISTORY_CERTA_DISABILITI_CHRONIC_DISEA_LEADI_DISABL"
+        },
+        {
+            "auroc": 0.5325520634651184,
+            "auprc": 0.2714097499847412,
+            "f1": 0.0,
+            "accuracy": 0.734375,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "K11_OESITIS"
+        },
+        {
+            "auroc": 0.7335423231124878,
+            "auprc": 0.4455817937850952,
+            "f1": 0.3157894736842105,
+            "accuracy": 0.796875,
+            "precision": 0.6666666666666666,
+            "recall": 0.20689655172413793,
+            "disease_term": "J10_INFLUPNEU"
+        },
+        {
+            "auroc": 0.5670572519302368,
+            "auprc": 0.2846291661262512,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "K11_OESITIS_ADVERSE"
+        },
+        {
+            "auroc": 0.8530096411705017,
+            "auprc": 0.6039142608642578,
+            "f1": 0.0,
+            "accuracy": 0.7578125,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "Z21_PRESENCE_OTH_FUNCTIONAL_IMPLANTNTS"
+        },
+        {
+            "auroc": 0.5559895634651184,
+            "auprc": 0.33861541748046875,
+            "f1": 0.06060606060606061,
+            "accuracy": 0.7578125,
+            "precision": 1.0,
+            "recall": 0.03125,
+            "disease_term": "Z21_FAMILY_HISTORY_MALIG_NEOPLASM"
+        },
+        {
+            "auroc": 0.4869791567325592,
+            "auprc": 0.2928173542022705,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "N14_PROSTHYPERPLA"
+        },
+        {
+            "auroc": 0.5934244394302368,
+            "auprc": 0.38780224323272705,
+            "f1": 0.16666666666666666,
+            "accuracy": 0.765625,
+            "precision": 0.75,
+            "recall": 0.09375,
+            "disease_term": "ST19_COMPLICATIO_PROCED_NOT_ELSEW_CLASSIFIED"
+        },
+        {
+            "auroc": 0.66796875,
+            "auprc": 0.47298428416252136,
+            "f1": 0.11764705882352941,
+            "accuracy": 0.765625,
+            "precision": 1.0,
+            "recall": 0.0625,
+            "disease_term": "HYPOT_THYRO_INCL"
+        },
+        {
+            "auroc": 0.7854816913604736,
+            "auprc": 0.6129934191703796,
+            "f1": 0.35,
+            "accuracy": 0.796875,
+            "precision": 0.875,
+            "recall": 0.21875,
+            "disease_term": "T2D"
+        },
+        {
+            "auroc": 0.4547525942325592,
+            "auprc": 0.24462947249412537,
+            "f1": 0.05714285714285714,
+            "accuracy": 0.7421875,
+            "precision": 0.3333333333333333,
+            "recall": 0.03125,
+            "disease_term": "L12_FOLLICULARCYST"
+        },
+        {
+            "auroc": 0.6461588740348816,
+            "auprc": 0.4421391487121582,
+            "f1": 0.24390243902439024,
+            "accuracy": 0.7578125,
+            "precision": 0.5555555555555556,
+            "recall": 0.15625,
+            "disease_term": "CD2_BENIGN_COLON"
+        },
+        {
+            "auroc": 0.49808427691459656,
+            "auprc": 0.2347373217344284,
+            "f1": 0.0,
+            "accuracy": 0.765625,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "N14_ABNORMALBLEED"
+        },
+        {
+            "auroc": 0.6575520634651184,
+            "auprc": 0.3912563621997833,
+            "f1": 0.05714285714285714,
+            "accuracy": 0.7421875,
+            "precision": 0.3333333333333333,
+            "recall": 0.03125,
+            "disease_term": "ST19_INJURI_HEAD"
+        },
+        {
+            "auroc": 0.6083983778953552,
+            "auprc": 0.37683314085006714,
+            "f1": 0.15384615384615385,
+            "accuracy": 0.7421875,
+            "precision": 0.42857142857142855,
+            "recall": 0.09375,
+            "disease_term": "CD2_BENIGN_COLORECANI_EXALLC"
+        },
+        {
+            "auroc": 0.53515625,
+            "auprc": 0.34180742502212524,
+            "f1": 0.11428571428571428,
+            "accuracy": 0.7578125,
+            "precision": 0.6666666666666666,
+            "recall": 0.0625,
+            "disease_term": "L12_DISORDSKINAPPENDIX"
+        },
+        {
+            "auroc": 0.6484375,
+            "auprc": 0.38264456391334534,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "Z21_MEDICAL_OBSER_EVALU_SUSPECTED_DISEA_CONDI"
+        },
+        {
+            "auroc": 0.6158854365348816,
+            "auprc": 0.3791472017765045,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "R18_NAUSEA_VOMITI"
+        },
+        {
+            "auroc": 0.6165364980697632,
+            "auprc": 0.4188006818294525,
+            "f1": 0.21052631578947367,
+            "accuracy": 0.765625,
+            "precision": 0.6666666666666666,
+            "recall": 0.125,
+            "disease_term": "N14_OTHBLADD"
+        },
+        {
+            "auroc": 0.7942708134651184,
+            "auprc": 0.6927944421768188,
+            "f1": 0.46511627906976744,
+            "accuracy": 0.8203125,
+            "precision": 0.9090909090909091,
+            "recall": 0.3125,
+            "disease_term": "M13_ARTHROSIS_OTH"
+        },
+        {
+            "auroc": 0.62890625,
+            "auprc": 0.375593364238739,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "M13_SYNOTEND"
+        },
+        {
+            "auroc": 0.63671875,
+            "auprc": 0.3592083156108856,
+            "f1": 0.058823529411764705,
+            "accuracy": 0.75,
+            "precision": 0.5,
+            "recall": 0.03125,
+            "disease_term": "H7_CATARACTOTHER"
+        },
+        {
+            "auroc": 0.5553385615348816,
+            "auprc": 0.28166481852531433,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "C3_BREAST_ERNEG_EXALLC"
+        },
+        {
+            "auroc": 0.5634765625,
+            "auprc": 0.3347548246383667,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "C3_BREAST_EXALLC"
+        },
+        {
+            "auroc": 0.4274088740348816,
+            "auprc": 0.2139318436384201,
+            "f1": 0.0,
+            "accuracy": 0.75,
+            "precision": 0.0,
+            "recall": 0.0,
+            "disease_term": "G6_CARPTU"
+        },
+        {
+            "auroc": 0.6705729365348816,
+            "auprc": 0.4315812289714813,
+            "f1": 0.17142857142857143,
+            "accuracy": 0.7734375,
+            "precision": 1.0,
+            "recall": 0.09375,
+            "disease_term": "M13_ARTHROSIS_KNEE"
+        }
+    ]
+}

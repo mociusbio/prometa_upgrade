@@ -1,0 +1,11 @@
+# 运行输出 (checkpoints / logs / results / 分析产物)
+outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# 系统
+.DS_Store
