@@ -76,9 +76,18 @@ pipeline 的中间产物：
 | 路径（相对 DATA_ROOT） | 内容 |
 |---|---|
 | `Prometa2.0_Plus/preprocessed_v2/` | `X_prot_{train,val}.npy` [N,2923]、`X_meta_{train,val}.npy` [N,251]、`eids_{train,val}.npy`、`meta_names.txt`（按 EID 对齐的双组学特征） |
-| `prometa-meta/prometa_reproduce/data_correct/` | `term2pre_{cases,controls}_{train,valid,test}.pkl`（781 个疾病的病例/对照 EID 列表，train/valid/test 按病人切分） |
+| `prometa-meta/prometa_reproduce/data_correct/` | `term2pre_{cases,controls}_{train,valid,test}.pkl`（病例/对照 EID 列表：train 781 / valid 25 / test 91 种疾病，按病人切分） |
 | `Prometa2.0_Plus/pathway_data/CPDB_pathways_genes.tab` | KEGG 通路-基因注释（蛋白 tokenizer 的通路掩码） |
 | `Prometa2.0_clean_split/pathway_data/prot_names.txt` | 2923 个蛋白名（与特征列序一致） |
+
+### 组内共享数据包
+
+本组服务器上已有一份完整数据副本：`/share/zhangzimo/prometa_upgrade_data/`（约 1.3G，
+内含上表全部文件 + 按病人划分的疾病任务定义 `meta_learning_split_by_patient/`），
+每个文件是什么、目录如何与上表对应，见该目录下的 `README.md`。
+用法：按上表相对路径在 `PROMETA_DATA_ROOT` 下建软链接指向共享包即可（示例见共享包 README）。
+
+注意：特征与疾病标签来自 UKB，受数据使用协议限制**不能公开分发**，GitHub 仓库因此不含数据。
 
 ## 代码目录
 
